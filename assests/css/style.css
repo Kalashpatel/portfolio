@@ -1,0 +1,295 @@
+:root{
+    --bs-primary: #f9d224;
+    --bs-primary-rgb: 249, 210, 36;
+    --bs-dark: #181818;
+    --bs-font-sans-serif: 'Kodchasan';
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Kodchasan';
+    color: black;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+.p-150{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.p-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.pt-150px{
+    padding-top: 150px;
+}
+.pb-150{
+    padding-bottom: 150px;
+}
+body{
+    background-color: #F2F3F5 !important;
+    font-family: 'Kodchasan';
+}
+.bg-light{
+    background-color: rgba(128, 128, 128, 0.2) !important;
+}
+.bubbles{
+    height: 100%;
+}
+.bubble1{
+    width: 150px;
+    height: 150px;
+    bottom: -150px;
+}
+.bubble2{
+    width: 100px;
+    height: 100px;
+    bottom: -150px;
+}
+.bubble3{
+    width: 50px;
+    height: 50px;
+    bottom: -150px;
+}
+.bubble4{
+    width: 20px;
+    height: 20px;
+    bottom: -150px;
+}
+.b11, .b21, .b31, .b41{
+    animation: animate 15s linear infinite, obj-move 6s infinite ease-in-out;
+}
+.b12, .b22, .b32, .b42{
+    animation: animate 15s linear infinite, obj-move-1-2 6s infinite ease-in-out;
+    animation-delay: 2s;
+}
+.b13, .b23, .b33, .b43{
+    animation: animate 15s linear infinite, obj-move-1-3 6s infinite ease-in-out;
+}
+.b14, .b24, .b34, .b44{
+    animation: animate 15s linear infinite, obj-move-1-4 6s infinite ease-in-out;
+    animation-delay: 3s;
+}
+.b21{
+    animation-delay: 4s;
+}
+.b22{
+    animation-delay: 5s;
+}
+.b23{
+    animation-delay: 6s;
+}
+.b24{
+    animation-delay: 7s;
+}
+.b31{
+    animation-delay: 9s;
+}
+.b32{
+    animation-delay: 10s;
+}
+.b33{
+    animation-delay: 11s;
+}
+.b34{
+    animation-delay: 12s;
+}
+.b41{
+    animation-delay: 13s;
+}
+.b42{
+    animation-delay: 14s;
+}
+.b43{
+    animation-delay: 15s;
+}
+.b44{
+    animation-delay: 16s;
+}
+@keyframes animate{
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-1700px) scale(1.5);
+  }
+}
+@keyframes obj-move{
+    0%{
+        left: 15%;
+    }
+    50%{
+        left: 5%;
+    }
+    100%{
+        left: 15%;
+    }
+}
+@keyframes obj-move-1-2{
+    0%{
+        left: 45%;
+    }
+    50%{
+        left: 32%;
+    }
+    100%{
+        left: 45%;
+    }
+}
+@keyframes obj-move-1-3{
+    0%{
+        right: 35%;
+    }
+    50%{
+        right: 22%;
+    }
+    100%{
+        right: 35%;
+    }
+}
+@keyframes obj-move-1-4{
+    0%{
+        right: 15%;
+    }
+    50%{
+        right: 5%;
+    }
+    100%{
+        right: 15%;
+    }
+}
+.hero{
+    height: 100vh;
+}
+.hero-img{
+    width: 400px;
+    height: 600px;
+}
+.hero-img::before, .hero-img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.hero-img::before{
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+.hero-img::after{
+    background: url(../images/face/my_pic4.jpg);
+    background-size: cover;
+}
+.hero-content{
+    backdrop-filter: blur(5px);
+}
+.hero-work-title{
+    width: 100%;
+    height: 60px;
+}
+.text-display-animation {
+  opacity: 0;
+  width: 100%;
+  animation: textFade 6s infinite;
+}
+.hero-content ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.hero-content ul li:nth-child(2) {
+  animation-delay: 2s;
+}
+.hero-content ul li:nth-child(3) {
+  animation-delay: 4s;
+}
+@keyframes textFade {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  10%, 30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40%, 100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+.transition{
+    transition: all 0.5s ease;
+}
+.btn{
+    border-radius: 40px;
+    background-color: var(--bs-primary);
+    color: black;
+    border: none;
+}
+.btn:hover{
+    border-radius: 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--bs-primary);
+}
+.about .btn:hover{
+    color: black;
+}
+.animation-rotate{
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.download-icon{
+    top: 50%;
+    right: 23.5%;
+    transform: translateY(-50%);
+}
+.about-item{
+    max-height: 660px;
+    overflow-y: auto;
+    width: 55%;
+}
+.offcanvas-icon{
+    top: 4%;
+    left: 5%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+.offcanvas-body ul li a:hover{
+    color: var(--bs-primary);
+}
+.s-links ul{
+    list-style: disc;
+}
+.s-links ul li::marker{
+    color: var(--bs-primary);
+}
+.s-links{
+    transform: rotate(90deg);
+    right: -8%;
+    top: 45%;
+}
+.nav-pills .nav-link.active{
+    background-color: transparent !important;
+    color: var(--bs-primary);
+}
+.nav-link{
+    color: black;
+}
+.section-links{
+    top: 55%;
+    left: 5%;
+    transform: translateY(-50%);
+}
