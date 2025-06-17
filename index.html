@@ -40,6 +40,10 @@
         <div class="bubble4 b44 position-absolute bg-primary bg-opacity-50 rounded-circle"></div>
     </div>
 
+    <header>
+       
+    </header>
+
     <main class="z-3 position-relative">
 
         <!-- offcanvas -->
@@ -78,15 +82,14 @@
         <!-- about -->
         <div class="d-flex align-items-start z-3">
           <div class="nav flex-column nav-pills me-3 position-fixed z-3 section-links" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active border-0 active fs-3 fw-bold transition" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="bi bi-house-door fs-3 fw-bold me-4"></i></button>
-            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-person fs-3 fw-bold me-4"></i></button>
-            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled><i class="bi bi-star fs-3 fw-bold me-4"></i></button>
-            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-bag fs-3 fw-bold me-4"></i></button>
-            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="bi bi-database fs-3 fw-bold me-4"></i></button>
-            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-person fs-3 fw-bold me-4"></i></button>
-            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled><i class="bi bi-star fs-3 fw-bold me-4"></i></button>
-            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-bag fs-3 fw-bold me-4"></i></button>
-            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="bi bi-database fs-3 fw-bold me-4"></i></button>
+            <button class="nav-link active border-0 fs-3 fw-bold transition position-relative" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="bi bi-house-door fs-3 fw-bold me-2"></i><span class="position-absolute p-1 bg-white px-4 rounded-5 align-text-top section-title transition">Home</span></button>
+            <button class="nav-link border-0 fs-3 fw-bold transition position-relative" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-person fs-3 fw-bold me-2"></i><span class="position-absolute p-1 bg-white px-4 rounded-5 align-text-top section-title transition">Profile</span></button>
+            <button class="nav-link border-0 fs-3 fw-bold transition position-relative" id="v-pills-resume-tab" data-bs-toggle="pill" data-bs-target="#v-pills-resume" type="button" role="tab" aria-controls="v-pills-resume" aria-selected="false"><i class="bi bi-bag fs-3 fw-bold me-2"></i><span class="position-absolute p-1 bg-white px-4 rounded-5 align-text-top section-title transition">Resume</span></button>
+            <button class="nav-link border-0 fs-3 fw-bold transition position-relative" id="v-pills-service-tab" data-bs-toggle="pill" data-bs-target="#v-pills-service" type="button" role="tab" aria-controls="v-pills-service" aria-selected="false"><i class="bi bi-database fs-3 fw-bold me-2"></i><span class="position-absolute p-1 bg-white px-4 rounded-5 align-text-top section-title transition">Service</span></button>
+            <button class="nav-link border-0 fs-3 fw-bold transition position-relative" id="v-pills-skills-tab" data-bs-toggle="pill" data-bs-target="#v-pills-skills" type="button" role="tab" aria-controls="v-pills-skills" aria-selected="false"><i class="bi bi-star fs-3 fw-bold me-2"></i><span class="position-absolute p-1 bg-white px-4 rounded-5 align-text-top section-title transition">Skills</span></button>
+            <button class="nav-link border-0 fs-3 fw-bold transition position-relative" id="v-pills-review-tab" data-bs-toggle="pill" data-bs-target="#v-pills-review" type="button" role="tab" aria-controls="v-pills-review" aria-selected="false"><i class="bi bi-chat fs-3 fw-bold me-2"></i><span class="position-absolute p-1 bg-white px-4 rounded-5 align-text-top section-title transition">Testimonial</span></button>
+            <button class="nav-link border-0 fs-3 fw-bold transition position-relative" id="v-pills-blog-tab" data-bs-toggle="pill" data-bs-target="#v-pills-blog" type="button" role="tab" aria-controls="v-pills-blog" aria-selected="false"><i class="fa-solid fa-b fs-3 fw-bold me-2"></i><span class="position-absolute p-1 bg-white px-4 rounded-5 align-text-top section-title transition">Blog</span></button>
+            <button class="nav-link border-0 fs-3 fw-bold transition position-relative" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false"><i class="bi bi-person-rolodex fs-3 fw-bold me-2"></i><span class="position-absolute p-1 bg-white px-4 rounded-5 align-text-top section-title transition">Contact</span></button>
           </div>
           <div class="tab-content about position-relative pb-5 mx-auto" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
@@ -122,18 +125,141 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="section-type p-1 bg-light w-25 rounded-5 mb-3">
-                                <p class="fs-3 m-0 text-center fw-bold">Intro</p>
+                                <p class="fs-4 m-0 text-center fw-bold">About Me</p>
                             </div>
-                            <h2 class="display-5 fw-bold mb-4">Say Hi from <span class="text-primary">Kalash patel</span>, Designer and Developer</h2>
-                            <p class="fs-5 mb-3">I'm a passionate freelancer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.</p>
+                            <h2 class="display-5 fw-bold mb-3">Crafting stories through Design and Innovation</h2>
+                            <p class="fs-5 mb-3">Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.</p>
                             <div class="about-bottom pt-1">
                                 <div class="row">
                                     <div class="col-6">
-                                        <a href="#" class="d-block mt-2 w-100 text-center px-3 fs-3 btn btn-primary transition fw-medium"><i class="bi bi-cloud-arrow-down"></i> Download CV</a>
+                                        <h2 class="display-2 text-primary">5+ </h2>
+                                        <p class="fs-5 text-uppercase">Years Of Experiance</p>
                                     </div>
                                     <div class="col-6">
-                                        <div class="about-circular-text">
-                                            <a href="#" class="position-relative"><img src="assests/images/about-intro/circular_text.png" alt="text" class="d-block ms-auto border-2 border-black animation-rotate position-relative"><i class="bi bi-download position-absolute fs-2 text-black-50 fw-medium download-icon"></i></a>
+                                        <h2 class="display-2 text-primary">160+ </h2>
+                                        <p class="fs-5 text-uppercase">projects completed in different countries</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-resume" role="tabpanel" aria-labelledby="v-pills-resume-tab" tabindex="0">
+                <div class="about-item mx-auto p-4 bg-white rounded-5">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-type p-1 bg-light w-25 rounded-5 mb-3">
+                                <p class="fs-4 m-0 text-center fw-bold">Resume</p>
+                            </div>
+                            <h2 class="display-5 fw-bold mb-3 text-primary">Education</h2>
+                            <p class="fs-5 mb-4">Dui ac erat in nec ut at viverra. Tristique morbi gravida pulvinar aenean ornare cras rhoncus volutpat a. Tempor cras convallis neque auctor ipsum cursus senectus. Bibendum nunc a fringilla vitae etiam eget volutpat felis scelerisque.</p>
+                            <div class="resume-content pt-1">
+                                <ul class="p-0 mb-5">
+                                    <li class="mb-3">
+                                        <h3 class="fw-light">Bachelor of Science in Information Technology</h3>
+                                        <p class="mb-2">Cambridge University / 2010 - 2014</p>
+                                        <p>Cursus ut consectetur rhoncus ut nibh. Bibendum at sit a tempor, laoreet varius et. Sed ut egestas vitae dolor nulla non Ullamcorper amet nibh.</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <h3 class="fw-light">Master of Science in Information Technology</h3>
+                                        <p class="mb-2">Cambridge University / 2010 - 2014</p>
+                                        <p>Cursus ut consectetur rhoncus ut nibh. Bibendum at sit a tempor, laoreet varius et. Sed ut egestas vitae dolor nulla non Ullamcorper amet nibh.</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="fw-light">PHD in Information Technology</h3>
+                                        <p class="mb-2">Cambridge University / 2010 - 2014</p>
+                                        <p>Cursus ut consectetur rhoncus ut nibh. Bibendum at sit a tempor, laoreet varius et. Sed ut egestas vitae dolor nulla non Ullamcorper amet nibh.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h2 class="display-5 fw-bold mb-3 text-primary">Experiance</h2>
+                            <p class="fs-5 mb-4">Dui ac erat in nec ut at viverra. Tristique morbi gravida pulvinar aenean ornare cras rhoncus volutpat a. Tempor cras convallis neque auctor ipsum cursus senectus. Bibendum nunc a fringilla vitae etiam eget volutpat felis scelerisque.</p>
+                            <div class="resume-content pt-1">
+                                <ul class="p-0">
+                                    <li class="mb-3">
+                                        <div class="experiance-content d-flex justify-content-between">
+                                            <div class="experiance-title">
+                                                <h3 class="fw-light">Lead design & development</h3>
+                                                <p class="mb-2">Envato / 2020 - Current</p>
+                                            </div>
+                                            <div class="experiance-logo">
+                                                <img src="assests/images/resume/envato.png" alt="evanto" class="resume-icon object-fit-cover">
+                                            </div>
+                                        </div>
+                                        <p>Cursus ut consectetur rhoncus ut nibh. Bibendum at sit a tempor, laoreet varius et. Sed ut egestas vitae dolor nulla non Ullamcorper amet nibh.</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <div class="experiance-content d-flex justify-content-between">
+                                            <div class="experiance-title">
+                                                <h3 class="fw-light">senior design & development</h3>
+                                                <p class="mb-2">Apple / 2019 - 2020</p>
+                                            </div>
+                                            <div class="experiance-logo">
+                                                <img src="assests/images/resume/apple-logo.png" alt="evanto" class="resume-icon object-fit-cover">
+                                            </div>
+                                        </div>
+                                        <p>Cursus ut consectetur rhoncus ut nibh. Bibendum at sit a tempor, laoreet varius et. Sed ut egestas vitae dolor nulla non Ullamcorper amet nibh.</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <div class="experiance-content d-flex justify-content-between">
+                                            <div class="experiance-title">
+                                                <h3 class="fw-light">junior design & development</h3>
+                                                <p class="mb-2">Twitter / 2018 - 2019</p>
+                                            </div>
+                                            <div class="experiance-logo">
+                                                <img src="assests/images/resume/twitter.png" alt="evanto" class="resume-icon object-fit-cover">
+                                            </div>
+                                        </div>
+                                        <p>Cursus ut consectetur rhoncus ut nibh. Bibendum at sit a tempor, laoreet varius et. Sed ut egestas vitae dolor nulla non Ullamcorper amet nibh.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-service" role="tabpanel" aria-labelledby="v-pills-service-tab" tabindex="0">
+                <div class="about-item mx-auto p-5 bg-white rounded-5">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-type p-1 bg-light w-25 rounded-5 mb-3">
+                                <p class="fs-4 m-0 text-center fw-bold">My Services</p>
+                            </div>
+                            <h2 class="display-5 fw-bold mb-3">Bringing your vision to life with Precision and Passion</h2>
+                            <p class="fs-5 mb-5">Faucibus nulla elit fringilla duis nunc. Enim urna nisl odio sed sapien. Aliquam turpis sit justo commodo elit in at. Elementum neque iaculis est in proin. Aliquam turpis sed diam a quis volutpat risus.</p>
+                            <div class="about-bottom pt-1">
+                                <div class="row row-gap-4">
+                                    <div class="col-6">
+                                        <div class="service-item p-4 rounded-4 mx-auto">
+                                            <img src="assests/images/services/ux-design.png" alt="ui ux" class="service-icon">
+                                            <h4 class="mt-3">Ui/Ux Design</h4>
+                                            <p class="fs-5">Aliquet pretium turpis lorem lorem a viverra pretium. Amet non in risus elit bibendum. Auctor venenatis lacus.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="service-item p-4 rounded-4 mx-auto">
+                                            <img src="assests/images/services/ux-design.png" alt="ui ux" class="service-icon">
+                                            <h4 class="mt-3">Ui/Ux Design</h4>
+                                            <p class="fs-5">Aliquet pretium turpis lorem lorem a viverra pretium. Amet non in risus elit bibendum. Auctor venenatis lacus.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="service-item p-4 rounded-4 mx-auto">
+                                            <img src="assests/images/services/ux-design.png" alt="ui ux" class="service-icon">
+                                            <h4 class="mt-3">Ui/Ux Design</h4>
+                                            <p class="fs-5">Aliquet pretium turpis lorem lorem a viverra pretium. Amet non in risus elit bibendum. Auctor venenatis lacus.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="service-item p-4 rounded-4 mx-auto">
+                                            <img src="assests/images/services/ux-design.png" alt="ui ux" class="service-icon">
+                                            <h4 class="mt-3">Ui/Ux Design</h4>
+                                            <p class="fs-5">Aliquet pretium turpis lorem lorem a viverra pretium. Amet non in risus elit bibendum. Auctor venenatis lacus.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -143,9 +269,403 @@
                 </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-skills" role="tabpanel" aria-labelledby="v-pills-skills-tab" tabindex="0">
+                <div class="about-item mx-auto p-5 bg-white rounded-5">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-type p-1 bg-light w-25 rounded-5 mb-3">
+                                <p class="fs-4 m-0 text-center fw-bold">My Skills</p>
+                            </div>
+                            <h2 class="display-5 fw-bold mb-3">Crafting stories through Design and Innovation</h2>
+                            <p class="fs-5 mb-3">Nec ligula facilisis congue sed montes odio arcu. Sed suspendisse lectus pulvinar tempor ultrices quis tellus diam sollicitudin.</p>
+                            <div class="about-bottom pt-2">
+                                <h3 class="mb-5">Language Skills</h3>
+                                <div class="row mb-5">
+                                    <!-- English - 90% -->
+                                    <div class="col-6 col-md-3">
+                                      <div class="progress-ring mx-auto" style="--offset: calc(326.72 - 326.72 * 0.9)">
+                                        <svg width="120" height="120">
+                                          <circle class="bg"></circle>
+                                          <circle class="progress"></circle>
+                                        </svg>
+                                        <div class="progress-ring-text">90%</div>
+                                      </div>
+                                      <div class="label text-center fs-5">English</div>
+                                    </div>
+                                
+                                    <!-- French - 75% -->
+                                    <div class="col-6 col-md-3">
+                                      <div class="progress-ring mx-auto" style="--offset: calc(326.72 - 326.72 * 0.75)">
+                                        <svg width="120" height="120">
+                                          <circle class="bg"></circle>
+                                          <circle class="progress"></circle>
+                                        </svg>
+                                        <div class="progress-ring-text">75%</div>
+                                      </div>
+                                      <div class="label text-center fs-5">French</div>
+                                    </div>
+                                
+                                    <!-- Spanish - 60% -->
+                                    <div class="col-6 col-md-3">
+                                      <div class="progress-ring mx-auto" style="--offset: calc(326.72 - 326.72 * 0.6)">
+                                        <svg width="120" height="120">
+                                          <circle class="bg"></circle>
+                                          <circle class="progress"></circle>
+                                        </svg>
+                                        <div class="progress-ring-text">60%</div>
+                                      </div>
+                                      <div class="label text-center fs-5">Spanish</div>
+                                    </div>
+                                
+                                    <!-- German - 40% -->
+                                    <div class="col-6 col-md-3">
+                                      <div class="progress-ring mx-auto" style="--offset: calc(326.72 - 326.72 * 0.4)">
+                                        <svg width="120" height="120">
+                                          <circle class="bg"></circle>
+                                          <circle class="progress"></circle>
+                                        </svg>
+                                        <div class="progress-ring-text">40%</div>
+                                      </div>
+                                      <div class="label text-center fs-5">German</div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mt-5 mb-5">Hard Skills</h3>
+                                <div class="row row-gap-3">
+                                    <div class="col-3">
+                                        <div class="h-skill-item w-100 p-4 rounded-top-pill rounded-bottom-pill text-center transition">
+                                            <i class="fa-brands fa-figma display-2 fw-lighter"></i>
+                                            <h4 class="mt-3 text-primary">85%</h4>
+                                        </div>
+                                        <div class="h-skills-label mt-3">
+                                            <h4 class="text-center">Figma</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="h-skill-item w-100 p-4 rounded-top-pill rounded-bottom-pill text-center transition">
+                                            <i class="fa-brands fa-bootstrap display-2 fw-lighter"></i>
+                                            <h4 class="mt-3 text-primary">90%</h4>
+                                        </div>
+                                        <div class="h-skills-label mt-3">
+                                            <h4 class="text-center">Bootsrap</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="h-skill-item w-100 p-4 rounded-top-pill rounded-bottom-pill text-center transition">
+                                            <i class="fa-brands fa-css3 display-2 fw-lighter"></i>
+                                            <h4 class="mt-3 text-primary">95%</h4>
+                                        </div>
+                                        <div class="h-skills-label mt-3">
+                                            <h4 class="text-center">CSS</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="h-skill-item w-100 p-4 rounded-top-pill rounded-bottom-pill text-center transition">
+                                            <i class="fa-brands fa-flutter display-2 fw-lighter"></i>
+                                            <h4 class="mt-3 text-primary">85%</h4>
+                                        </div>
+                                        <div class="h-skills-label mt-3">
+                                            <h4 class="text-center">Flutter</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="h-skill-item w-100 p-4 rounded-top-pill rounded-bottom-pill text-center transition">
+                                            <i class="fa-solid fa-crop-simple display-2 fw-lighter"></i>
+                                            <h4 class="mt-3 text-primary">85%</h4>
+                                        </div>
+                                        <div class="h-skills-label mt-3">
+                                            <h4 class="text-center">Framer</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="h-skill-item w-100 p-4 rounded-top-pill rounded-bottom-pill text-center transition">
+                                            <i class="fa-brands fa-html5 display-2 fw-lighter"></i>
+                                            <h4 class="mt-3 text-primary">95%</h4>
+                                        </div>
+                                        <div class="h-skills-label mt-3">
+                                            <h4 class="text-center">HTML</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="h-skill-item w-100 p-4 rounded-top-pill rounded-bottom-pill text-center transition">
+                                            <i class="fa-brands fa-wordpress-simple display-2 fw-lighter"></i>
+                                            <h4 class="mt-3 text-primary">85%</h4>
+                                        </div>
+                                        <div class="h-skills-label mt-3">
+                                            <h4 class="text-center">WordPress</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="h-skill-item w-100 p-4 rounded-top-pill rounded-bottom-pill text-center transition">
+                                            <i class="fa-solid fa-kip-sign display-2 fw-lighter"></i>
+                                            <h4 class="mt-3 text-primary">85%</h4>
+                                        </div>
+                                        <div class="h-skills-label mt-3">
+                                            <h4 class="text-center">Kotline</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-review" role="tabpanel" aria-labelledby="v-pills-review-tab" tabindex="0">
+                <div class="about-item mx-auto p-4 bg-white rounded-5">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-type p-1 bg-light w-25 rounded-5 mb-3">
+                                <p class="fs-4 m-0 text-center fw-bold">Testimonials</p>
+                            </div>
+                            <h2 class="display-5 fw-bold mb-3">Trusted By Hundred Clients</h2>
+                            <p class="fs-5 mb-3">Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.</p>
+                            <div class="about-bottom pt-1">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <div class="testimonial-item w-100 p-4 rounded-4">
+                                                <div class="testimonial-face d-flex gap-3 position-relative">
+                                                    <i class="bi bi-quote position-absolute display-2 text-primary end-0 top-0 testimonial-quote"></i>
+                                                    <div class="face-img">
+                                                        <img src="assests/images/testimonial/testimonial_img2.png" alt="face1" class="d-block rounded-circle">
+                                                    </div>
+                                                    <div class="face-name">
+                                                        <h4>Mark Dally</h4>
+                                                        <p>CEO</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-rating mt-1">
+                                                    <ul class="d-flex gap-2 p-0">
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="testimonial-content mt-2">
+                                                    <p class="fs-5">Professional, responsive, and creative web developer. Delivered a sleek, functional website on time. Great communication and attention to detail. Highly recommended!</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <div class="testimonial-item w-100 p-4 rounded-4">
+                                                <div class="testimonial-face d-flex gap-3 position-relative">
+                                                    <i class="bi bi-quote position-absolute display-2 text-primary end-0 top-0 testimonial-quote"></i>
+                                                    <div class="face-img">
+                                                        <img src="assests/images/testimonial/testimonial_img3.png" alt="face1" class="d-block rounded-circle">
+                                                    </div>
+                                                    <div class="face-name">
+                                                        <h4>Dan Swayer</h4>
+                                                        <p>CEO</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-rating mt-1">
+                                                    <ul class="d-flex gap-2 p-0">
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="testimonial-content mt-2">
+                                                    <p class="fs-5">Professional, responsive, and creative web developer. Delivered a sleek, functional website on time. Great communication and attention to detail. Highly recommended!</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <div class="testimonial-item w-100 p-4 rounded-4">
+                                                <div class="testimonial-face d-flex gap-3 position-relative">
+                                                    <i class="bi bi-quote position-absolute display-2 text-primary end-0 top-0 testimonial-quote"></i>
+                                                    <div class="face-img">
+                                                        <img src="assests/images/testimonial/testimonial_img4.png" alt="face1" class="d-block rounded-circle">
+                                                    </div>
+                                                    <div class="face-name">
+                                                        <h4>Jhone Deo</h4>
+                                                        <p>CEO</p>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-rating mt-1">
+                                                    <ul class="d-flex gap-2 p-0">
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                        <li><i class="bi bi-star-fill text-primary"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="testimonial-content mt-2">
+                                                    <p class="fs-5">Professional, responsive, and creative web developer. Delivered a sleek, functional website on time. Great communication and attention to detail. Highly recommended!</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-blog" role="tabpanel" aria-labelledby="v-pills-blog-tab" tabindex="0">
+                <div class="about-item mx-auto p-4 bg-white rounded-5">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-type p-1 bg-light w-25 rounded-5 mb-3">
+                                <p class="fs-4 m-0 text-center fw-bold">Blog</p>
+                            </div>
+                            <h2 class="display-5 fw-bold mb-3">Recent Blogs And Articles</h2>
+                            <p class="fs-5 mb-3">Massa in ornare pharetra vitae et. Nunc lobortis cursus risus bibendum sed. Viverra tempus amet nibh id ipsum gravida mus.</p>
+                            <div class="about-bottom pt-1">
+                                <div class="row row-gap-3">
+                                    <div class="col-6">
+                                        <a href="#">
+                                            <div class="blog-item blog1 w-100 rounded-4 overflow-hidden position-relative">
+                                                <div class="blog-date position-absolute bg-white rounded-3 z-1 text-center">
+                                                    <h3 class="m-0 mt-2">28</h3>
+                                                    <p>Nov</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="blog-title mt-3">
+                                            <h5>Become a Frontend Developer in 5 Simple Steps</h5>
+                                            <p class="fs-5">web development</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#">
+                                            <div class="blog-item blog2 w-100 rounded-4 overflow-hidden position-relative">
+                                                <div class="blog-date position-absolute bg-white rounded-3 z-1 text-center">
+                                                    <h3 class="m-0 mt-2">28</h3>
+                                                    <p>Nov</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="blog-title mt-3">
+                                            <h5>Become a Frontend Developer in 5 Simple Steps</h5>
+                                            <p class="fs-5">web development</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#">
+                                            <div class="blog-item blog3 w-100 rounded-4 overflow-hidden position-relative">
+                                                <div class="blog-date position-absolute bg-white rounded-3 z-1 text-center">
+                                                    <h3 class="m-0 mt-2">28</h3>
+                                                    <p>Nov</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="blog-title mt-3">
+                                            <h5>Become a Frontend Developer in 5 Simple Steps</h5>
+                                            <p class="fs-5">web development</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#">
+                                            <div class="blog-item blog4 w-100 rounded-4 overflow-hidden position-relative">
+                                                <div class="blog-date position-absolute bg-white rounded-3 z-1 text-center">
+                                                    <h3 class="m-0 mt-2">28</h3>
+                                                    <p>Nov</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="blog-title mt-3">
+                                            <h5>Become a Frontend Developer in 5 Simple Steps</h5>
+                                            <p class="fs-5">web development</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#">
+                                            <div class="blog-item blog5 w-100 rounded-4 overflow-hidden position-relative">
+                                                <div class="blog-date position-absolute bg-white rounded-3 z-1 text-center">
+                                                    <h3 class="m-0 mt-2">28</h3>
+                                                    <p>Nov</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="blog-title mt-3">
+                                            <h5>Become a Frontend Developer in 5 Simple Steps</h5>
+                                            <p class="fs-5">web development</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#">
+                                            <div class="blog-item blog6 w-100 rounded-4 overflow-hidden position-relative">
+                                                <div class="blog-date position-absolute bg-white rounded-3 z-1 text-center">
+                                                    <h3 class="m-0 mt-2">28</h3>
+                                                    <p>Nov</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="blog-title mt-3">
+                                            <h5>Become a Frontend Developer in 5 Simple Steps</h5>
+                                            <p class="fs-5">web development</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab" tabindex="0">
+                <div class="about-item mx-auto p-5 bg-white rounded-5">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-type p-1 bg-light w-25 rounded-5 mb-3">
+                                <p class="fs-4 m-0 text-center fw-bold">Contact Us</p>
+                            </div>
+                            <h2 class="display-5 fw-bold mb-3">Let's Work Together!</h2>
+                            <div class="about-bottom pt-1"><p class="fs-5 mb-5">Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. </p>
+                                <form method="get" action="">
+                                    <div class="row row-gap-4">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control border-0 border-bottom border-black border-opacity-50" id="exampleInputName" aria-describedby="emailHelp" placeholder="Whats Your Name*">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="email" class="form-control border-0 border-bottom border-black border-opacity-50" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Your Email*">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="tel" class="form-control border-0 border-bottom border-black border-opacity-50" id="exampleInputNumber" aria-describedby="Number" placeholder="Your Phone Number*">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control border-0 border-bottom border-black border-opacity-50" id="exampleInputSunject" aria-describedby="emailHelp" placeholder="Subject*">
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea class="form-control border-0 border-bottom border-black border-opacity-50" id="exampleFormControlTextarea1" rows="3" placeholder="Tell Us About Your Project*"></textarea>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="submit" class="btn btn-primary mb-3 fs-3 px-4 transition"><i class="bi bi-send me-2"></i>Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="contact-map mt-4">
+                                    <h2 class="display-3 fw-bold">Get In Touch</h2>
+                                    <ul class="p-0 mt-4 mb-4">
+                                        <li class="mb-2"><a href="tel:+1 234 567 8899" class="fs-5"><i class="bi bi-telephone me-2 text-primary"></i>+1 234 567 8899</a></li>
+                                        <li class="mb-2"><a href="mailto:hello@olivia.com" class="fs-5"><i class="bi bi-envelope me-2 text-primary"></i> hello@olivia.com</a></li>
+                                        <li><a href="#" class="fs-5"><i class="bi bi-geo-alt me-2 text-primary"></i> 2118 Thornridge Cir. Syracuse,Connecticut 35624</a></li>
+                                    </ul>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6043206.490143463!2d-85.82485673641746!3d42.304465222501385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sin!4v1750135286698!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p class="mt-3">© Olivia 2024. All rights reserved by Kalash_patel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
           </div>
         </div>
 
@@ -154,7 +674,7 @@
 
     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
       <div class="offcanvas-header">
-        <img src="assests/images/offcanvas/logo.png" alt="logo">
+        <img src="assests/images/offcanvas/name-logo.png" alt="logo" class="d-block object-fit-cover">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body mt-3 p-4">
@@ -165,7 +685,6 @@
             <li class="mb-4"><a href="#" class="fs-3 fw-bold transition"><i class="bi bi-bag fs-3 fw-bold me-4"></i>Resume</a></li>
             <li class="mb-4"><a href="#" class="fs-3 fw-bold transition"><i class="bi bi-database fs-3 fw-bold me-4"></i>Services</a></li>
             <li class="mb-4"><a href="#" class="fs-3 fw-bold transition"><i class="bi bi-star fs-3 fw-bold me-4"></i>Skills</a></li>
-            <li class="mb-4"><a href="#" class="fs-3 fw-bold transition"><i class="fa-regular fa-address-book fs-3 fw-bold me-4"></i>Portfolio</a></li>
             <li class="mb-4"><a href="#" class="fs-3 fw-bold transition"><i class="bi bi-chat fs-3 fw-bold me-4"></i>Testimonials</a></li>
             <li class="mb-4"><a href="#" class="fs-3 fw-bold transition"><i class="fa-solid fa-b fs-3 fw-bold me-4"></i>Blog</a></li>
             <li><a href="#" class="fs-3 fw-bold transition"><i class="bi bi-person-rolodex fs-3 fw-bold me-4"></i>Contact</a></li>

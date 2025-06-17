@@ -290,6 +290,106 @@ body{
 }
 .section-links{
     top: 55%;
-    left: 5%;
+    left: 4.5%;
     transform: translateY(-50%);
+}
+.section-title{
+    display: none;
+}
+.nav-link:hover .section-title{
+    display: inline-block;
+}
+.nav-pills{
+    --bs-nav-pills-link-active-bg: black;
+}
+.offcanvas-header img, header img{
+    width: 100px;
+    height: 100px;
+}
+.resume-icon, .service-icon{
+    width: 50px;
+    height: 50px;
+}
+.service-item, .testimonial-item{
+    background-color: #F2F3F5;
+}
+.progress-ring {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+.progress-ring svg {
+  transform: rotate(-90deg);
+}
+.progress-ring circle {
+  fill: none;
+  stroke-width: 5;
+  r: 52;
+  cx: 60;
+  cy: 60;
+}
+.progress-ring .bg {
+  stroke: #eee;
+}
+.progress-ring .progress {
+  stroke: var(--bs-primary);
+  stroke-linecap: round;
+  stroke-dasharray: 326.72;
+  stroke-dashoffset: var(--offset);
+  transition: stroke-dashoffset 1s ease-out;
+}
+.progress-ring-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+.h-skill-item{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+.h-skill-item:hover{
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-primary);
+}
+.testimonial-quote{
+    transform: rotate(180deg);
+}
+.blog-item{
+    height: 250px;
+}
+.blog1{
+    background: url(../images/blog/blog_slider_img1.png);
+    background-size: cover;
+}
+.blog2{
+    background: url(../images/blog/blog_img5.png);
+    background-size: cover;
+}
+.blog3{
+    background: url(../images/blog/blog_pop_up.png);
+    background-size: cover;
+}
+.blog4{
+    background: url(../images/blog/blog_slider_img2.png);
+    background-size: cover;
+}
+.blog5{
+    background: url(../images/blog/blog_slider_img3.png);
+    background-size: cover;
+}
+.blog6{
+    background: url(../images/blog/blog_slider_img4.png);
+    background-size: cover;
+}
+.blog-date{
+    width: 70px;
+    height: 70px;
+    top: 3%;
+    right: 3%;
 }
