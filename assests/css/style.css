@@ -1,9 +1,10 @@
 :root{
-    --bs-primary: #f9d224;
+    --bs-primary: #39f924;
     --bs-primary-rgb: 249, 210, 36;
     --bs-dark: #181818;
     --bs-font-sans-serif: 'Kodchasan';
 }
+/* #f9d224 */
 h1, h2, h3, h4, h5, h6{
     font-family: 'Kodchasan';
     color: black;
