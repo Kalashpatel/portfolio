@@ -434,35 +434,37 @@ body{
 }
 #preloader {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0b0b0b; /* Match your background */
+    inset: 0;
+    background: #0b0b0b; /* Match your site background */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999999 !important; /* Extremely high to stay on top */
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 999999;
+    transition: opacity 0.8s ease-in-out;
 }
 
-/* Make sure the body doesn't scroll while loading */
-body.loading {
-    overflow: hidden;
+.signature-svg {
+    max-width: 70%; 
+    height: auto;
 }
 
-.loader {
-    width: 50px;
-    height: 50px;
-    border: 3px solid rgba(255, 255, 255, 0.1);
-    border-top: 3px solid #00d2ff; /* Your accent color */
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+.sig-path {
+    fill: none;
+    stroke: #f9d224; /* Your brand primary color */
+    stroke-width: 2; /* Adjust for thickness */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    /* Drawing transition */
+    transition: stroke-dashoffset 3s ease-in-out;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+/* This hides the rectangular box path from your screenshot 
+   so only the text "writes" itself */
+.box-path {
+    display: none;
+}
+
+.preloader-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
