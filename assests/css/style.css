@@ -434,37 +434,65 @@ body{
 }
 #preloader {
     position: fixed;
-    inset: 0;
-    background: #0b0b0b; /* Match your site background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0b0b0b;
     z-index: 999999;
-    transition: opacity 0.8s ease-in-out;
 }
 
-.signature-svg {
-    max-width: 70%; 
-    height: auto;
+/* 1. The Bounce Animation */
+.bounce-box {
+    animation: bounceInDown 1.2s both;
 }
 
-.sig-path {
-    fill: none;
-    stroke: #f9d224; /* Your brand primary color */
-    stroke-width: 2; /* Adjust for thickness */
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    /* Drawing transition */
-    transition: stroke-dashoffset 3s ease-in-out;
+/* 2. The Image & Width Reveal */
+.signature-img {
+    /* Starts hidden - clipped from the right */
+    clip-path: inset(0 100% 0 0); 
+    transition: clip-path 2.0s ease-in-out 1.2s; /* Reveal starts after bounce */
 }
 
-/* This hides the rectangular box path from your screenshot 
-   so only the text "writes" itself */
-.box-path {
-    display: none;
+/* Triggered by JS */
+.start-reveal .signature-img {
+    clip-path: inset(0 0 0 0); /* Reveals to 100% width */
 }
 
+/* Keyframes for the Drop & Bounce */
+@keyframes bounceInDown {
+    0% { opacity: 0; transform: translateY(-500px); }
+    60% { opacity: 1; transform: translateY(30px); }
+    80% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Preloader Fade Out */
 .preloader-hidden {
     opacity: 0;
-    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 0.8s ease;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Mobile Devices */
+@media (max-width: 575.98px) {
+    .signature-img {
+        width: 280px; /* Adjust based on your image aspect ratio */
+    }
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .signature-img {
+        width: 450px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .signature-img {
+        width: 600px;
+    }
 }

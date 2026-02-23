@@ -1,24 +1,26 @@
-window.addEventListener("DOMContentLoaded", () => {
-    const paths = document.querySelectorAll(".sig-path");
-    
-    paths.forEach((path) => {
-        const length = path.getTotalLength();
-        
-        // Setup the "hidden" state
-        path.style.strokeDasharray = length;
-        path.style.strokeDashoffset = length;
-        
-        // Trigger the "drawing" state
-        // Use a tiny timeout so the browser registers the starting position
-        setTimeout(() => {
-            path.style.strokeDashoffset = "0";
-        }, 100);
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+
+    // Start the clip-path (width) reveal
+    setTimeout(() => {
+        preloader.classList.add("start-reveal");
+    }, 100); 
 });
 
-// Hide the preloader when the page is fully loaded
+// Function to hide preloader and reveal the site
+function hidePreloader() {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+        preloader.classList.add("preloader-hidden");
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 1000);
+    }
+}
+
+// Wait for the full page to load before hiding
 window.addEventListener("load", () => {
-    setTimeout(() => {
-        document.getElementById("preloader").classList.add("preloader-hidden");
-    }, 3500); // 3.5 seconds gives the signature time to finish drawing
+    // Total time: 1.2s (bounce) + 2s (reveal) = 3.2s
+    // We wait 4 seconds to be safe
+    setTimeout(hidePreloader, 4000);
 });
