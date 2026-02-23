@@ -432,37 +432,37 @@ body{
 .experiance-list ul li{
     list-style: disc;
 }
-/* Preloader Container */
 #preloader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background: #0b0b0b; /* Match your site's dark background */
+    height: 100%;
+    background-color: #0b0b0b; /* Match your background */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Stay on top of everything */
-    transition: opacity 0.5s ease;
+    z-index: 999999 !important; /* Extremely high to stay on top */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-/* Modern Spinner */
+/* Make sure the body doesn't scroll while loading */
+body.loading {
+    overflow: hidden;
+}
+
 .loader {
     width: 50px;
     height: 50px;
     border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top: 3px solid #00d2ff; /* Your accent color */
     border-radius: 50%;
-    border-top-color: #00d2ff; /* Change to your primary accent color */
-    animation: spin 1s ease-in-out infinite;
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
-}
-
-/* Class to hide preloader */
-.preloader-hidden {
-    opacity: 0;
-    pointer-events: none;
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
