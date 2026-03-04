@@ -2,15 +2,15 @@
    .about-item{
         width: 100%;
    }
-   .download-icon{
-      right: 40%;
-   }
    .hero-img{
       width: 100%;
       height: 400px;
    }
    .hero{
       height: auto;
+   }
+   .bubbles{
+      display: none;
    }
 }
 @media (min-width: 576px){

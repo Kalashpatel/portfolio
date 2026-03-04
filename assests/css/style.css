@@ -257,10 +257,14 @@ body{
         transform: rotate(360deg);
     }
 }
+.about-circular-text{
+    width: 180px;
+    height: 180px;
+}
 .download-icon{
     top: 50%;
-    right: 23.5%;
-    transform: translateY(-50%);
+    left: 52%;
+    transform: translate(-50%, -50%);
 }
 .about-item{
     max-height: 660px;
@@ -495,4 +499,9 @@ body{
     .signature-img {
         width: 600px;
     }
+}
+.project-item img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
